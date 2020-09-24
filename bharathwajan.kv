@@ -1,0 +1,23 @@
+Screen:
+    id:screen
+    MDTextField:
+        id:textfield
+        pos_hint :{'center_x':0.5,'center_y':0.6}
+        hint_text:"Enter book name"
+        icon_right:"book-open-page-variant-outline"
+        icon_right_color: app.theme_cls.primary_color
+        size_hint_x:0.7
+    MDTextField:
+        id:textfield1
+        pos_hint :{'center_x':0.5,'center_y':0.5}
+        hint_text:"Enter starting page"
+        icon_right:"page-next-outline"
+        icon_right_color: app.theme_cls.primary_color
+        size_hint_x:0.7
+    MDRectangleFlatButton:
+        id:button
+        text:"read book"
+        pos_hint:{'center_x':0.5,'center_y':0.4}
+        on_press:app.read()
+    
+    
